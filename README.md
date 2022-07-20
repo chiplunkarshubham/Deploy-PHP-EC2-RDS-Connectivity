@@ -4,6 +4,7 @@ To check connectivity between EC2 and RDS using simple PHP Code
 For VM (CE or EC2) for ubuntu/debian based.
 
 Commands:
+
 	apt-get update
 	apt-get install apache2 php php-mysql -y
 	apt-get install mysql-client -y
@@ -14,13 +15,16 @@ Commands:
 Roles:
 	Create and attach S3 Full Access and RDS full access role to EC2.
 		How To verify you got access after attaching?
-		Commands: [Install AWS CLI on ec2 instance using: apt install awscli]
+		Commands:
+
+			apt install awscli
 			aws configure //Set the region in which you are working, and format as json, rest just click enter
 			aws rds describe-db-instances  // After setting the db
 			telnet mysqldaabase.c04odrrucaii.us-east-1.rds.amazonaws.com 3306   //After setting the db
 	Attach role to the service account of your CE to have admin access of Cloud SQL	
 		How To verify you got access after attaching?
 		Commands:
+
 			glcloud config set compute/region REGION
 			gcloud sql databases list
 			telnet IP_ADDRESS_OF_RDS 3306   //After setting the db
@@ -46,7 +50,7 @@ Login to database from VM:
 
 Create and S3/Cloud Storage bucket and add and image in it, make sure it is public
 AWS: Give Ec2 s3 full acess
-GCP: Give Service Account role to Admin access to Cloud Storage
+GCP: Give Service Account role to Admin access to Cloud Storage \n
 Add this line of code in the index.php code.
 
 	cd /var/www/html
