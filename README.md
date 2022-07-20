@@ -37,8 +37,10 @@ How to check:
 
 Login to database from VM:
 	For AWS
+
 		mysql -h mysqldaabase.c04odrrucaii.us-east-1.rds.amazonaws.com -u shubham -p [Enter, and in the next line give the password]
 	For GCP
+
 		mysql -h IP_ADDRESS_OF_RDS -u shubham -p [Enter, and in the next line give the password]
 
 
