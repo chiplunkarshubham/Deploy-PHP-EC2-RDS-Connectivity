@@ -58,4 +58,13 @@ Add this line of code in the index.php code.
 		after(<body>)  <img src='https://storage.googleapis.com/qwiklabs-gcp-0005e186fa559a09/my-excellent-blog.png'>   before <h1></h1>
 	service apache2 restart
 
+
+
+For postgresdb use:
+	psql -h mysqldaabase.c04odrrucaii.us-east-1.rds.amazonaws.com -u shubham -p   // Incase you are accessing from inside the VPC
+
+	mysql -h mysqldaabase.c04odrrucaii.us-east-1.rds.amazonaws.com -p 5432 -u shubham -d mydb [Enter, and it will ask for password]
+	where shubham is the database user
+	and mydb is the database name [Go to Additional Configurations expand it, In the Initial database name: mydb]
+
  
